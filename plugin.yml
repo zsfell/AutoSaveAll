@@ -1,0 +1,6 @@
+name: AutoSaveAll
+main: zs\Loader
+version: 1.0.0
+api: 5.0.0
+author: zsfell
+description: A plugin that automates backup server, due to Roll Back when Server Closed.
