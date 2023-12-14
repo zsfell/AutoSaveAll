@@ -8,6 +8,7 @@ use zs\Task\Task;
 class Loader extends PluginBase {
 
     public function onEnable(): void {
-        $this->getScheduler()->scheduleRepeatingTask(new Task($this), 20 * 60);
+        $this->saveDefaultConfig();
+        $this->getScheduler()->scheduleRepeatingTask(new Task($this), 20 * 60 * $this->getConfig()->get("interval"));
     }
 }
